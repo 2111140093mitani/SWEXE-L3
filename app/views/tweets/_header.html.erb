@@ -1,0 +1,45 @@
+<article>
+  <div class="side">
+    <form action="サイトURL" method="get">
+        <input type="search" name="search" placeholder="キーワードを入力" size="30" style="width:200px; height:65px;">
+        <input type="submit" name="submit" value="検索" style="width:50px; height:65px;">
+    </form>
+    <div class="news">
+        <a href="#">通知</a>
+    </div>
+    <div class="message">
+        <a href="#">メッセージ</a>
+    </div>
+    <div class="bookmark">
+        <a href="#">ブックマーク</a>
+    </div>
+    <div class="list">
+        <a href="#">リスト</a>
+    </div>
+    <div class="profile">
+        <a href="#">プロフィール</a>
+    </div>
+    <div class="do">
+        <%= link_to 'ツイートする', 'tweets/new' %>
+    </div>
+  </div> 
+      <div class="main">
+          <div class="header">
+              <div class="tweet">
+                  <a href="#">ツイート</a>
+              </div>
+              <div class="tweets">
+                  <a href="#">ツイートと返信</a>
+              </div>
+              <div class="media">
+                  <a href="#">メディア</a>
+              </div>
+              <div class="good">
+                  <a href="#">いいね</a>
+              </div>
+          </div>
+          <div class="contentB">
+              <%= yield %>
+          </div>
+      </div>
+</article>
